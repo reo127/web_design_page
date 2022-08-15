@@ -2,12 +2,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+html, body{
     overflow-x: hidden;
 }
 
 .main-div{
     background: linear-gradient(72deg, rgba(255,255,255,1) 42%, rgba(237,196,255,1) 41%);
     height: 100vh;
+    background-repeat: no-repeat;
 }
 
 /* =============================== */
@@ -109,4 +113,75 @@ nav {
     position: absolute;
     left: 49.5rem;
     bottom: 3rem;
+}
+
+
+@media screen and (max-width: 1222px) {
+    .signin-btn{
+        margin-right: 0rem;
+    }
+
+    .imgs-div img:nth-of-type(3) {
+        position: relative;
+        left: 0rem;
+        top: 7rem;
+        width: 69rem;
+    }
+
+    .main-div {
+        height: initial;
+    }
+}
+
+@media screen and (max-width: 1014px) {
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 1rem;
+        flex-direction: column;
+    }
+
+    .imgs-div img:nth-of-type(1){
+        display: none;
+    }
+
+    .imgs-div img:nth-of-type(2){
+       display: none;
+    }
+
+    .nav-items {
+        margin: 1rem 0rem;
+    }
+
+    .left-section > h4 {
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (max-width: 646px) {
+    .nav-item {
+        font-size: .8rem;
+        margin: 1rem 1rem;
+    }
+
+    .intro-section {
+        padding: 0rem 0rem;
+    }
+
+    .left-section {
+        margin-top: 2rem;
+        margin-left: 1rem;
+        text-align: center;
+    }
+
+    .left-section > h4 {
+        width: 25rem;
+        font-size: 1.3rem;
+        margin: 2rem auto;
+    }
+
+    .imgs-div img:nth-of-type(3){
+        width: 35rem;
+    }
 }
